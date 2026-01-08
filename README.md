@@ -1,133 +1,141 @@
-🚀 indiayz
-<p align="center"> <strong>Unified Open-Source AI Toolkit</strong><br> <em>Build, run, and scale serious AI applications with a clean, modular Python SDK.</em> </p> <p align="center"> <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"> <img src="https://img.shields.io/badge/python-3.9%2B-blue"> <img src="https://img.shields.io/badge/status-active-success"> <img src="https://img.shields.io/badge/open--source-yes-brightgreen"> </p>
+# 🚀 indiayz
 
-indiayz is a developer-first AI SDK that unifies modern AI capabilities
-under a single, predictable Python interface.
+<p align="center">
+  <strong>Unified Open-Source AI Toolkit</strong><br>
+  <em>Build, run, and scale serious AI applications with a clean, modular Python SDK.</em>
+</p>
 
-Designed for real systems — not demos.
+<p align="center">
+  <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
+  <img src="https://img.shields.io/badge/python-3.9%2B-blue">
+  <img src="https://img.shields.io/badge/status-active-success">
+  <img src="https://img.shields.io/badge/open--source-yes-brightgreen">
+</p>
 
-🌍 What is indiayz?
+---
 
-indiayz is an official, unified, open-source AI toolkit created to simplify how developers build and scale AI-powered applications.
+> **indiayz** is a developer-first AI SDK that unifies modern AI capabilities
+> under a single, predictable Python interface.
+> **Designed for real systems — not demos.**
 
-Instead of stitching together dozens of unrelated libraries, indiayz provides one consistent abstraction layer across modern AI domains — from LLMs and image generation to audio, video, agents, and automation.
+---
 
-Philosophy:
+## 🌍 What is **indiayz**?
 
-Powerful AI systems should be simple to use, transparent, and future-proof.
+**indiayz** is an **official, unified, open-source AI toolkit** created to simplify how developers build and scale AI-powered applications.
 
-✨ Why indiayz?
+Instead of stitching together dozens of unrelated libraries, **indiayz provides one consistent abstraction layer** across modern AI domains — from **LLMs and image generation** to **audio, video, agents, and automation**.
 
-✅ One toolkit, many AI capabilities
+**Philosophy:**
 
-✅ Clean abstractions over battle-tested open-source libraries
+> Powerful AI systems should be **simple to use**, **transparent**, and **future-proof**.
 
-✅ Offline & local-first friendly (run models on your own machine)
+---
 
-✅ Modular architecture — use only what you need
+## ✨ Why indiayz?
 
-✅ Production-oriented design
+* ✅ **One toolkit, many AI capabilities**
+* ✅ Clean abstractions over battle-tested open-source libraries
+* ✅ **Offline & local-first friendly** (run models on your own machine)
+* ✅ Modular architecture — use only what you need
+* ✅ Production-oriented design
+* ✅ Built with long-term maintainability in mind
 
-✅ Built with long-term maintainability in mind
+This project is **not a wrapper dump**.
+It is a **carefully engineered SDK** focused on clarity, consistency, and extensibility.
 
-This project is not a wrapper dump.
-It is a carefully engineered SDK focused on clarity, consistency, and extensibility.
+---
 
-🎯 Who is this for?
+## 🎯 Who is this for?
 
-AI engineers building real production systems
+* AI engineers building **real production systems**
+* Developers tired of glue code between libraries
+* Teams that want **local & open AI tooling**
+* Researchers who value **clarity over hype**
 
-Developers tired of glue code between libraries
+---
 
-Teams that want local & open AI tooling
+## 🧠 Supported Domains
 
-Researchers who value clarity over hype
+### 🤖 LLMs / Text / Chat
 
-🧠 Supported Domains
-🤖 LLMs / Text / Chat
+* Local LLM execution
+* Embeddings for memory & semantic search
+* Chat & prompt abstractions
 
-Local LLM execution
+### 🖼️ Image AI
 
-Embeddings for memory & semantic search
+* Text-to-image generation
+* Background removal
+* Upscaling & restoration
+* Segmentation & control inputs
 
-Chat & prompt abstractions
+### 🎬 Video AI
 
-🖼️ Image AI
+* Video generation & animation
+* Editing & frame-level processing
+* Restoration & colorization
 
-Text-to-image generation
+### 🔊 Audio / Voice AI
 
-Background removal
+* Speech-to-Text
+* Text-to-Speech
+* Voice cloning
+* Audio processing & cleanup
 
-Upscaling & restoration
+### 👁️ Vision / OCR
 
-Segmentation & control inputs
+* OCR (image → text)
+* Face, hand & pose landmarks
+* Vision-based analysis
 
-🎬 Video AI
+### 📄 Document AI
 
-Video generation & animation
+* PDF text & table extraction
+* Structured document parsing
 
-Editing & frame-level processing
+### 🧠 Memory / Search
 
-Restoration & colorization
+* Vector databases
+* Semantic similarity search
+* Long-term AI memory
 
-🔊 Audio / Voice AI
+### 🤖 Agents & Automation
 
-Speech-to-Text
+* Multi-agent workflows
+* Autonomous AI agents
+* Browser automation
 
-Text-to-Speech
+---
 
-Voice cloning
+## 📦 Installation
 
-Audio processing & cleanup
-
-👁️ Vision / OCR
-
-OCR (image → text)
-
-Face, hand & pose landmarks
-
-Vision-based analysis
-
-📄 Document AI
-
-PDF text & table extraction
-
-Structured document parsing
-
-🧠 Memory / Search
-
-Vector databases
-
-Semantic similarity search
-
-Long-term AI memory
-
-🤖 Agents & Automation
-
-Multi-agent workflows
-
-Autonomous AI agents
-
-Browser automation
-
-📦 Installation
+```bash
 pip install indiayz
+```
 
+> PyPI release coming soon.
+> Development version available via GitHub.
 
-PyPI release coming soon.
-Development version available via GitHub.
+---
 
-⚡ Quick Example
+## ⚡ Quick Example
+
+```python
 from indiayz import Image, Voice, Chat
 
 Image.generate("a futuristic AI city at night")
 Voice.tts("Hello from indiayz")
 Chat.ask("Explain transformers in simple terms")
+```
 
+**Clean. Predictable. Unified.**
 
-Clean. Predictable. Unified.
+---
 
-🧱 Project Architecture
+## 🧱 Project Architecture
+
+```
 indiayz/
 ├── core/        # shared base logic & configuration
 ├── llm/         # chat & embeddings
@@ -140,52 +148,55 @@ indiayz/
 ├── api/         # FastAPI backend
 ├── ui/          # Gradio UI
 └── examples/    # usage examples
+```
 
+Designed to scale **without becoming unmaintainable**.
 
-Designed to scale without becoming unmaintainable.
+---
 
-🛣 Roadmap
+## 🛣 Roadmap
 
-Phase 1 — Core SDK & foundational modules
+* **Phase 1** — Core SDK & foundational modules
+* **Phase 2** — 30+ AI capabilities
+* **Phase 3** — Plugin ecosystem
+* **Phase 4** — Community & contributors
 
-Phase 2 — 30+ AI capabilities
+---
 
-Phase 3 — Plugin ecosystem
+## 🔐 License
 
-Phase 4 — Community & contributors
-
-🔐 License
-
-Apache License 2.0
+**Apache License 2.0**
 
 You are free to:
 
-Use commercially
-
-Modify
-
-Distribute
+* Use commercially
+* Modify
+* Distribute
 
 With proper attribution.
 
+```
 © 2026 indiayz
 Apache-2.0 Licensed
+```
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 
 Contributions, ideas, and discussions are welcome.
 
-If you find indiayz useful:
+If you find **indiayz** useful:
 
-⭐ Star the repository
+* ⭐ Star the repository
+* 🍴 Fork it
+* 💬 Share feedback
 
-🍴 Fork it
+---
 
-💬 Share feedback
+## 🧠 Author
 
-🧠 Author
-
-indiayz
+**indiayz**
 Unified AI Toolkit
 
-The future of AI tooling is unified, transparent, and developer-first.
+> *The future of AI tooling is unified, transparent, and developer-first.*
