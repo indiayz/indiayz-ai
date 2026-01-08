@@ -1,12 +1,19 @@
 🚀 indiayz
-<p align="center"> <strong>Unified Open-Source AI Toolkit</strong><br> <em>Build, run, and scale AI applications with a clean, modular Python SDK.</em> </p> <p align="center"> <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"> <img src="https://img.shields.io/badge/python-3.9%2B-blue"> <img src="https://img.shields.io/badge/status-active-success"> <img src="https://img.shields.io/badge/open--source-yes-brightgreen"> </p>
+<p align="center"> <strong>Unified Open-Source AI Toolkit</strong><br> <em>Build, run, and scale serious AI applications with a clean, modular Python SDK.</em> </p> <p align="center"> <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"> <img src="https://img.shields.io/badge/python-3.9%2B-blue"> <img src="https://img.shields.io/badge/status-active-success"> <img src="https://img.shields.io/badge/open--source-yes-brightgreen"> </p>
+
+indiayz is a developer-first AI SDK that unifies modern AI capabilities
+under a single, predictable Python interface.
+
+Designed for real systems — not demos.
+
 🌍 What is indiayz?
 
-indiayz is an official, unified, open-source AI toolkit designed to simplify how developers build and scale AI-powered applications.
+indiayz is an official, unified, open-source AI toolkit created to simplify how developers build and scale AI-powered applications.
 
-Instead of stitching together dozens of unrelated libraries, indiayz provides a single, consistent interface across modern AI domains — from LLMs and image generation to audio, video, agents, and automation.
+Instead of stitching together dozens of unrelated libraries, indiayz provides one consistent abstraction layer across modern AI domains — from LLMs and image generation to audio, video, agents, and automation.
 
 Philosophy:
+
 Powerful AI systems should be simple to use, transparent, and future-proof.
 
 ✨ Why indiayz?
@@ -25,6 +32,16 @@ Powerful AI systems should be simple to use, transparent, and future-proof.
 
 This project is not a wrapper dump.
 It is a carefully engineered SDK focused on clarity, consistency, and extensibility.
+
+🎯 Who is this for?
+
+AI engineers building real production systems
+
+Developers tired of glue code between libraries
+
+Teams that want local & open AI tooling
+
+Researchers who value clarity over hype
 
 🧠 Supported Domains
 🤖 LLMs / Text / Chat
@@ -112,7 +129,7 @@ Clean. Predictable. Unified.
 
 🧱 Project Architecture
 indiayz/
-├── core/        # shared base logic & config
+├── core/        # shared base logic & configuration
 ├── llm/         # chat & embeddings
 ├── image/       # generation & processing
 ├── audio/       # speech & sound
@@ -164,12 +181,11 @@ If you find indiayz useful:
 
 🍴 Fork it
 
-🧠 Share feedback
+💬 Share feedback
 
 🧠 Author
 
 indiayz
 Unified AI Toolkit
-Built with clarity, not hype.
 
 The future of AI tooling is unified, transparent, and developer-first.
