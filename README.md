@@ -64,23 +64,3 @@ It is a **carefully designed abstraction layer** over trusted open-source AI lib
 ```bash
 pip install indiayz
 
-✨ Example (preview)
-from indiayz import Image, Voice, Chat
-
-Image.generate("a futuristic AI city")
-Voice.tts("Hello from indiayz")
-Chat.ask("Explain transformers in simple terms")
-
-🧱 Project Structure (planned)
-indiayz/
-├── core/
-├── llm/
-├── image/
-├── audio/
-├── video/
-├── vision/
-├── memory/
-├── agents/
-├── api/
-├── ui/
-└── examples/
