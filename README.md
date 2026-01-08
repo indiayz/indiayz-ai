@@ -6,6 +6,8 @@
 </p>
 
 <p align="center">
+  [![PyPI](https://img.shields.io/pypi/v/indiayz.svg)](https://pypi.org/project/indiayz/)
+  
   <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   <img src="https://img.shields.io/badge/python-3.9%2B-blue">
   <img src="https://img.shields.io/badge/status-active-success">
