@@ -1,18 +1,4 @@
-class Settings:
-    """
-    Global configuration holder.
-    """
+# indiayz/core/config.py
 
-    def __init__(
-        self,
-        device: str = "cpu",
-        verbose: bool = False,
-    ):
-        self.device = device
-        self.verbose = verbose
-
-    def as_dict(self) -> dict:
-        return {
-            "device": self.device,
-            "verbose": self.verbose,
-        }
+BASE_URL = "https://api.indiayz"   # Future: apna backend domain
+TIMEOUT = 60
