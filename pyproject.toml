@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "indiayz"
-version = "0.1.1"
+version = "0.1.2"
 description = "Unified open-source AI toolkit with a clean, modular Python SDK"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -31,7 +31,7 @@ Repository = "https://github.com/indiayz/indiayz-ai"
 Issues = "https://github.com/indiayz/indiayz-ai/issues"
 
 [tool.setuptools]
-packages = ["indiayz"]
+packages = { find = {} }
 
 [tool.setuptools.package-data]
 indiayz = ["py.typed"]
