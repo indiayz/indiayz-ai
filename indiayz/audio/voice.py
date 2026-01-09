@@ -1,7 +1,7 @@
 from indiayz.core.base import BaseModule
 
-class Voice(BaseModule):
+class Audio(BaseModule):
     @staticmethod
     def tts(text: str):
-        res = Voice._post("/api/audio", {"text": text})
-        return res
+        instance = Audio()
+        return instance._post("/api/audio", {"text": text})
