@@ -3,12 +3,8 @@ __author__ = "indiayz"
 __license__ = "Apache-2.0"
 
 # Public API exports
+from indiayz.llm.chat import Chat
 from indiayz.image.generate import Image
 from indiayz.audio.voice import Voice
-from indiayz.llm.chat import Chat
 
-__all__ = [
-    "Image",
-    "Voice",
-    "Chat",
-]
+__all__ = ["Chat", "Image", "Voice"]
