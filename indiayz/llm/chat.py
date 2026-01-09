@@ -1,3 +1,5 @@
+# indiayz/llm/chat.py
+
 from indiayz.core.base import BaseModule
 
 
@@ -10,5 +12,5 @@ class Chat(BaseModule):
 
     @staticmethod
     def ask(prompt: str) -> str:
-        # Placeholder (real LLM backend later)
-        return f"[indiayz-chat] {prompt}"
+        response = Chat._post("/chat", {"prompt": prompt})
+        return response.get("response", "")
