@@ -6,5 +6,7 @@ __license__ = "Apache-2.0"
 from indiayz.llm.chat import Chat
 from indiayz.image.generate import Image
 from indiayz.audio.voice import Voice
+from indiayz.video.download import Video
+from indiayz.vision.ocr import Vision
 
-__all__ = ["Chat", "Image", "Voice"]
+__all__ = ["Chat", "Image", "Voice", "Video", "Vision"]
