@@ -2,7 +2,7 @@ import os
 import requests
 from indiayz.core.config import BASE_URL, TIMEOUT
 
-API_KEY = os.getenv("INDIAYZ_API_KEY")   # 👈 यहाँ हार्डकोड नहीं
+API_KEY = os.getenv("API_KEY")   # 👈 यहाँ हार्डकोड नहीं
 
 class BaseModule:
     @staticmethod
