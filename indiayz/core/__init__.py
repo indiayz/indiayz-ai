@@ -1,3 +1,3 @@
 from .base import BaseModule
-from .config import Settings
+from .config import BASE_URL, TIMEOUT
 from .errors import IndiayzError
