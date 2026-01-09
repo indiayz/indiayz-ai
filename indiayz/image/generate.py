@@ -1,3 +1,5 @@
+# indiayz/image/generate.py
+
 from indiayz.core.base import BaseModule
 
 
@@ -10,5 +12,5 @@ class Image(BaseModule):
 
     @staticmethod
     def generate(prompt: str):
-        # Placeholder
-        print(f"[indiayz-image] Generating image for: {prompt}")
+        response = Image._post("/image", {"prompt": prompt})
+        return response
