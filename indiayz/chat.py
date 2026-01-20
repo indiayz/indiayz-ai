@@ -1,8 +1,3 @@
-"""
-indiayz.chat
-Real-time AI chat interface powered by indiayz backend.
-"""
-
 from typing import Dict, Optional
 from .client import client
 from .exceptions import IndiayzAPIError
