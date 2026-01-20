@@ -1,6 +1,6 @@
 # Media Download
 
-The Media module allows downloading videos or audio using a backend-powered yt-dlp service.
+The Media module allows downloading videos or audio using a backend-powered.
 
 ---
 
