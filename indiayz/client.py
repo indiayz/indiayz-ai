@@ -16,7 +16,7 @@ class IndiayzClient:
         self.base_url = (
             base_url
             or os.getenv("INDIAYZ_BASE_URL")
-            or "https://api.indiayz.com"
+            or "https://indiayzapi-e741f7bb1deb.herokuapp.com/"
         ).rstrip("/")
         self.timeout = timeout
 
