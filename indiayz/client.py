@@ -4,6 +4,7 @@ from typing import Any, Dict, Optional
 
 
 class IndiayzAPIError(Exception):
+    """Base exception for Indiayz SDK"""
     pass
 
 
@@ -16,7 +17,7 @@ class IndiayzClient:
         self.base_url = (
             base_url
             or os.getenv("INDIAYZ_BASE_URL")
-            or "https://indiayzapi-e741f7bb1deb.herokuapp.com/"
+            or "https://indiayzapi-e741f7bb1deb.herokuapp.com"
         ).rstrip("/")
         self.timeout = timeout
 
@@ -29,12 +30,11 @@ class IndiayzClient:
             )
             r.raise_for_status()
             return r.json()
-        except Exception as e:
-            raise IndiayzAPIError(str(e))
+        except requests.exceptions.RequestException as e:
+            raise IndiayzAPIError(
+                "Failed to connect to Indiayz API"
+            ) from e
 
 
-_client = IndiayzClient()
-
-
-def _get(path: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
-    return _client.get(path, params)
+# ✅ THIS IS THE MISSING PIECE
+client = IndiayzClient()
