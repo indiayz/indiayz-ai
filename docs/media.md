@@ -10,7 +10,7 @@ The Media module allows downloading videos or audio using a backend-powered.
 - Instagram
 - Facebook
 - Twitter / X
-- 2000+ sites supported by yt-dlp
+- 2000+ sites supported by indiayz
 
 ---
 
@@ -37,5 +37,5 @@ result = indiayz.media_download(
 ## Notes
 
 - Downloads are processed server-side
-- Client never runs yt-dlp locally
+- Client never runs indiayz locally
 - Safer and faster for developers
