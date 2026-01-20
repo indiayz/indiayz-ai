@@ -1,22 +1,25 @@
 from typing import Dict
-from .client import _get
+from .client import client
 
 
 def search(query: str) -> Dict:
     """
-    Search Wikipedia articles.
+    Search Wikipedia articles via Indiayz API.
 
     Parameters
     ----------
     query : str
-        Search query.
+        Search query (e.g. "India")
 
     Returns
     -------
     dict
-        API response containing search results.
+        Dictionary containing Wikipedia article data.
     """
     if not query or not isinstance(query, str):
         raise ValueError("query must be a non-empty string")
 
-    return _get("/wiki", params={"q": query})
+    return client.get(
+        "/wiki",
+        params={"q": query}
+    )
