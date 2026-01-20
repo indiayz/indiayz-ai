@@ -1,4 +1,4 @@
-from typing import Dict, Any, Optional
+from typing import Dict, Optional
 from .client import client
 from .exceptions import IndiayzAPIError
 
@@ -8,7 +8,7 @@ def chat(
     *,
     model: Optional[str] = None,
     timeout: Optional[int] = None,
-) -> Dict[str, Any]:
+) -> Dict:
     """
     Send a message to the AI chat service.
     """
@@ -28,4 +28,4 @@ def chat(
             timeout=timeout
         )
     except Exception as e:
-        raise IndiayzAPIError("Chat request failed") from e
+        raise IndiayzAPIError(str(e))
