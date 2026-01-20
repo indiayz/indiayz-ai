@@ -18,6 +18,6 @@ Yes. Apache 2.0 license allows commercial use.
 
 ---
 
-## Is yt-dlp bundled in the SDK?
+## Is indiayz bundled in the SDK?
 
-No. yt-dlp runs only on the backend.
+No. indiayz runs only on the backend.
