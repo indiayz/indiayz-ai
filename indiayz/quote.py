@@ -1,14 +1,14 @@
 from typing import Dict
-from .client import _get
+from .client import client
 
 
 def random() -> Dict:
     """
-    Fetch a random quote.
+    Fetch a random inspirational quote via Indiayz API.
 
     Returns
     -------
     dict
-        API response containing a quote.
+        Dictionary containing quote text and author.
     """
-    return _get("/quote")
+    return client.get("/quote")
