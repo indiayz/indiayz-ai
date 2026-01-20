@@ -1,3 +1,0 @@
-"""
-Vector memory & search interfaces.
-"""
